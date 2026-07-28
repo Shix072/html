@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercicio 3 - Minhas Listas </title>
+    </head>
+    <body>
+        <h2> Lista de Compras </h2>
+        <ul>
+            <li> Pão </li>
+            <li> Abacate </li>
+            <li> Banana </li>
+        </ul>
+
+        <h2> Melhores Bandas </h2>
+        <ol>
+            <li> Bruno e Marrone </li>
+            <li> Megadeth </li>
+            <li> Led Zeppelin </li>
+        </ol>
+    </body>
+</html> 
