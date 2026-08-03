@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> Painel de gestão de estoque</title>
+</head>
+<body>
+    <header>
+        <h1> Centro de Distribução - Controle de Estoque</h1>
+        <hr>
+
+    </header>
+
+    <aside>
+        <h3> Menu do sistema </h3>
+        <ul>
+            <li><a href="#">Visão geral </a></li>
+            <li><a href="#"> Entrada e Materias </a></li>
+            <li><a href="#"> Invetário </a></li>
+            <li><a href="#"> Relatórios </a></li>
+        </ul>
+        <hr>
+    </aside>
+
+    <main>
+        <section>
+            <h2> Cadastrar novo item no estoque </h2>
+            <form>
+                <label for="sku">Codigo sku:</label><br>
+                <input type="text" id="sku" placeholder="Ex: ELE-001" required><br><br>
+
+                <label for="produto">Nome do produto:</label><br>
+                <input type="text" id="produto" placeholder="Nome do item" required><br><br>
+
+                <label for="categoria"> Categoria:</label><br><br>
+                <select id="categoria" required>
+                    <option value="">Selecione uma categoria...</option>
+                    <option value="Eletronicos">Eletronicos</option>
+                    <option value="ferramentas">ferramentas</option>
+                    <option value="embalagens">embalagens</option>
+                    <option value="escritorio">escritorio</option>
+                    <option value="dildos">dildos</option>
+                </select><br><br>
+
+                <label for="quantidade">quantidade:</label>
+                <input type="number" id="quantidade" min="1" required><br><br>
+
+                <label for="preço">Preço Unitario (R$)</label><br>
+                <input type="number" id="preço" step="0.01" placeholder="0.00" required><br><br>
+
+                <label for="data_recebimento">Data de recebimento:</label>
+                <input type="date" id="data_recebimento" required><br><br>
+
+                <button type="submit">Cadastrar Item</button>
+                <button type="reset">Limpar Campos</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2> Inventario atual</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th> SKU </th>
+                        <th> Item </th>
+                        <th> Categoria </th>
+                        <th> Qtd em Estoque</th>
+                        <th> Preço Unitarios </th>
+                        <th> Status </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> ELE-102</tr>
+                    <td> Teclado usb</td>
+                    <td> Eletronicos</td>
+                    <td> 20</td>
+                    <td> R$210,00</td>
+                    <td> Disponivel</td>
+                    </tr>
+                    <tr>
+                        <tr> ELE-103</tr>
+                    <td> Jogo de ferramentas</td>
+                    <td> Ferramentas</td>
+                    <td> 12</td>
+                    <td> R$85,00</td>
+                    <td> Disponivel</td>
+                    </tr>
+                    <tr>
+                        <tr> ELE-104</tr>
+                    <td> manga</td>
+                    <td> livro</td>
+                    <td> 3</td>
+                    <td> R$50,00</td>
+                    <td> Disponivel</td>
+                    </tr>
+                    <tr>
+                        <tr> ELE-105</tr>
+                    <td> hq marvel</td>
+                    <td> livro</td>
+                    <td> 10</td>
+                    <td> R$15,00</td>
+                    <td> Disponivel</td>
+                    </tr>
+                    <tr>
+                        <tr> ELE-106</tr>
+                    <td> hq dc</td>
+                    <td> livro</td>
+                    <td> 300</td>
+                    <td> R$30,00</td>
+                    <td> Disponivel</td>
+                    </tr>
+                    <tr>
+                        <tr> ELE-107</tr>
+                    <td> papel A4</td>
+                    <td> escritorios</td>
+                    <td> 80</td>
+                    <td> R$24,00</td>
+                    <td> Disponivel</td>
+                    </tr>
+                    <tr>
+                        <tr> ELE-108</tr>
+                    <td> dvd do Ben 10</td>
+                    <td> Filme</td>
+                    <td> 10</td>
+                    <td> R$10,00</td>
+                    <td> Disponivel</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colpsan="3"><strong> Total geral acumulado em estoque</strong></td>
+                    </tr>
+                </tfoot>
+        </section>
+    </main>
+    
+</body>
+</html>
